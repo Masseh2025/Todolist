@@ -24,14 +24,16 @@
           <div>
             <input id="task-input" type="text" placeholder="..." />
           </div>
-          <ul class="todo-list__task-list">
-            <li class="todo-list__task">
-              <div class="todo-list__task-container">
-                <input type="checkbox" name="" id="checkbox" / >Example task
-              </div>
-              <div class="todo-list__task-time">0:00</div>
-              <div class="menu"></div>
-            </li>
+          <ul class="todo-list__task-list" data-list>
+            <template id="task">
+              <li class="todo-list__task">
+                <div class="todo-list__task-container">
+                  <input type="checkbox" name="" id="checkbox" / >Example task
+                </div>
+                <div class="todo-list__task-time">0:00</div>
+                <div class="menu"></div>
+              </li>
+            </template>
           </ul>
         </div>
       </div>
