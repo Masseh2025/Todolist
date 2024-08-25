@@ -173,6 +173,7 @@ textarea:not([rows]) {
   width: 28px;
   background-image: url(menu.svg);
   background-size: cover;
+  cursor: pointer;
 }
 
 .todo-list__task-time {
