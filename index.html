@@ -5,15 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="background">
     <div class="todo-list">
       <div class="todo-list__outer">
         <div class="todo-list__content">
-          <h1>Todo list</h1>
-          <ul>
-            <li>Example task</li>
+          <h1 class="task-list__header">Todo list</h1>
+          <div>
+            <label for="task-input">Task</label>
+          </div>
+          <div>
+            <input id="task-input" type="text" placeholder="..." />
+          </div>
+          <ul class="todo-list__task-list">
+            <li class="todo-list__task">
+              <div class="todo-list__task-container">
+                <input type="checkbox" name="" id="checkbox" / >Example task
+              </div>
+              <div class="todo-list__task-time">0:00</div>
+              <div class="menu"></div>
+            </li>
           </ul>
         </div>
       </div>
